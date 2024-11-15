@@ -53,7 +53,7 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(/images/welcome_hero/welcome-banner.jpg);
+  background-image: url(images/welcome_hero/welcome-banner.jpg);
   background-position: center center;
   background-size: cover;
   height: 100vh;
