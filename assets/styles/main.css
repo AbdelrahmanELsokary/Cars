@@ -160,7 +160,7 @@ ul li a:hover {
   rotate: -90deg;
 }
 .select span a {
-  background-image: url(../assets/images/icons/next-grey.png);
+  background-image: url(../images/icons/next-grey.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 11px 14px;
