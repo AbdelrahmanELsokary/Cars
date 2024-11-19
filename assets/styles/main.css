@@ -30,6 +30,8 @@ header {
 
 nav ul {
   display: flex;
+  gap: 0;
+  flex-wrap: wrap;
 }
 nav ul li {
   list-style: none;
@@ -53,10 +55,11 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(/assets/images/welcome_hero/welcome-banner.jpg);
+  background-image: url(../images/welcome_hero/welcome-banner.jpg);
   background-position: center center;
   background-size: cover;
   height: 100vh;
+  padding-bottom: 100px;
 }
 .hero::after {
   content: "";
@@ -80,6 +83,7 @@ ul li a:hover {
   color: #fff;
   z-index: 1;
   width: 900px;
+  padding-bottom: 30px;
 }
 .hero a {
   color: #fff;
@@ -88,26 +92,25 @@ ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   z-index: 1;
-  width: 200px;
-  height: fit-content;
-  margin: 35px;
+  width: 150px;
   padding: 20px;
-  padding-left: 3.5%;
+  padding-left: 35px;
 }
 .hero a:hover {
   background-color: blue;
+  transition: 0.5s;
 }
 
 .select {
   display: flex;
-  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
   background-color: #fff;
   font-size: small;
   box-shadow: 0 10px 40px 0 rgba(38, 40, 64, 0.2);
   position: relative;
   bottom: 162px;
   width: 80%;
-  height: 325px;
   margin: auto;
 }
 .selsct_your_car,
@@ -142,7 +145,6 @@ ul li a:hover {
   color: #fff;
   text-decoration: none;
   width: 150px;
-  height: fit-content;
   border-radius: 5px;
   margin: auto;
   padding: 20px;
@@ -167,6 +169,8 @@ ul li a:hover {
 }
 .repair_support_car {
   display: flex;
+  gap: 0;
+  flex-wrap: wrap;
 }
 .repair_support_car img {
   align-items: center;
@@ -186,12 +190,18 @@ ul li a:hover {
 }
 .largest_car:hover {
   background-color: #4e4ffa;
+  color: #fff;
+  transition: 0.7s;
 }
 .support_car:hover {
   background-color: #4e4ffa;
+  color: #fff;
+  transition: 0.7s;
 }
 .repair_car:hover {
   background-color: #4e4ffa;
+  color: #fff;
+  transition: 0.7s;
 }
 .repair_support_car .largest_car h3,
 .repair_car h3,
@@ -207,9 +217,6 @@ ul li a:hover {
   line-height: 25px;
   width: 300px;
   margin: auto;
-}
-.largest_car p:hover {
-  color: #fff;
 }
 .largest_car::after {
   content: "";
@@ -243,6 +250,8 @@ ul li a:hover {
 }
 .new_car {
   padding-top: 200px;
+  gap: 0;
+  flex-wrap: wrap;
 }
 .titel_new_cars p {
   color: #000000a2;
@@ -268,35 +277,34 @@ ul li a:hover {
   margin: auto;
 }
 .img_new_car {
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  flex-wrap: wrap;
 }
-.img_new_car img {
-  margin-top: 100px;
+.img_new_car .img_car img {
+  padding-top: 100px;
 }
 .titel_car h2 {
   color: #00000096;
   font-size: 30px;
+  padding-bottom: 20px;
 }
 .new_car .titel_new_cars p {
   color: #000000a9;
 }
 .img_new_car {
   display: flex;
-  margin-top: 20px;
 }
-.paragraphe {
+.titel_car p {
   line-height: 30px;
   font-size: 20px;
   width: 500px;
 }
-.paragraphe p {
-  margin-top: 20px;
+.titel_car p {
+  padding-bottom: 35px;
 }
-.btn {
-  margin-top: 30px;
-}
-.btn a {
+.titel_car a {
   text-decoration: none;
   background-color: #4e4ffa;
   color: #fff;
@@ -305,13 +313,11 @@ ul li a:hover {
   border-radius: 5px;
   padding: 15px;
 }
-.btn a:hover {
+.titel_car a:hover {
   background-color: blue;
+  transition: 0.5s;
 }
 .featured_cars {
-  width: 90%;
-  height: 2000px;
-  margin: auto;
   padding-top: 300px;
 }
 .titel_featured_cars {
@@ -382,8 +388,8 @@ ul li a:hover {
 }
 .what_our_clients_say {
   background-color: #81899814;
-  height: 100vh;
-  padding-top: 80px;
+  margin-top: 100px;
+  padding-top: 30px;
 }
 .titel_what_our_clients_say {
   text-align: center;
@@ -405,11 +411,10 @@ ul li a:hover {
 }
 .what_clients_say {
   display: flex;
-  gap: 70px;
+  justify-content: center;
+  gap: 60px;
   flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
+  padding-bottom: 40px;
 }
 .client_1,
 .client_2,
@@ -418,24 +423,31 @@ ul li a:hover {
   flex-direction: column;
   border: 1px solid #00000071;
   width: 400px;
-  height: 420px;
-  padding-bottom: 50px;
+  height: 450px;
+  align-items: center;
+  text-align: center;
 }
 .client_1:hover {
   background-color: #4e4ffa;
+  color: #fff;
+  transition: 0.7s;
 }
 .client_2:hover {
   background-color: #4e4ffa;
+  color: #fff;
+  transition: 0.7s;
 }
 .client_3:hover {
   background-color: #4e4ffa;
+  color: #fff;
+  transition: 0.7s;
 }
 .client_1 img,
 .client_2 img,
 .client_3 img {
   width: 100px;
-  padding-top: 40px;
   margin: auto;
+  padding-top: 50px;
 }
 .client_1 p,
 .client_2 p,
@@ -452,32 +464,27 @@ ul li a:hover {
   text-transform: capitalize;
   line-height: 25px;
   text-align: center;
+  padding-bottom: 50px;
 }
-.brand {
-  height: 300px;
-  margin-bottom: 100px;
-}
+
 .brand .brands {
-  justify-content: center;
   display: flex;
-  width: 90%;
-  height: 200px;
-  margin: auto;
-  padding-top: 150px;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 .brand .brands img {
   align-items: center;
-  padding: 50px;
 }
 footer {
   background-color: #2a2d54;
-  width: 100%;
-  height: 700px;
 }
 .footer {
   display: flex;
   justify-content: space-around;
-  height: 600px;
+  gap: 0;
+  flex-wrap: wrap;
   padding-top: 100px;
 }
 .footer_logo {
@@ -511,6 +518,7 @@ footer {
 }
 .top_brands {
   display: flex;
+  justify-content: space-between;
   position: relative;
   width: 300px;
 }
@@ -539,7 +547,6 @@ footer {
   text-decoration: none;
   text-transform: capitalize;
 }
-
 .about_devloon li a:hover {
   padding-left: 15px;
   transition: 0.7s;
@@ -580,10 +587,8 @@ footer {
 .foot {
   display: flex;
   justify-content: space-around;
-  width: 90%;
   border-top: 1px solid #ccc;
-  margin: auto;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .copy p {
   color: #c5c5c5ad;
@@ -595,4 +600,9 @@ footer {
 .social_icons span img {
   width: 65px;
   height: 22px;
+}
+@media screen and (max-width: 700px) {
+  .img_new_car .img_car img {
+    width: 300px;
+  }
 }
