@@ -7,15 +7,28 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
 }
 header {
+  position: fixed;
+  top: 0;
   display: flex;
+  /* background-color: #434cb5bb; */
   justify-content: space-around;
-  position: absolute;
-  z-index: 1;
   width: 100%;
-  height: 30px;
+  z-index: 2;
+}
+@media (max-width: 991px) {
+  header {
+    justify-content: start;
+  }
+  header nav {
+    display: none;
+  }
 }
 .logo {
   padding: 25px 20px;
@@ -27,11 +40,8 @@ header {
   font-size: 30px;
   color: #fff;
 }
-
 nav ul {
   display: flex;
-  gap: 0;
-  flex-wrap: wrap;
 }
 nav ul li {
   list-style: none;
@@ -51,38 +61,47 @@ ul li a:hover {
   color: #4e4ffa;
 }
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url(../images/welcome_hero/welcome-banner.jpg);
-  background-position: center center;
-  background-size: cover;
+  position: relative;
   height: 100vh;
   padding-bottom: 100px;
+  background-image: url(../images/welcome_hero/welcome-banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 .hero::after {
   content: "";
-  display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: #81899854;
   width: 100%;
   height: 100%;
 }
 .hero h1 {
   text-transform: uppercase;
-  font-size: 40px;
   font-weight: 900;
   line-height: 120px;
   color: #fff;
   z-index: 1;
+}
+@media (min-width: 767px) {
+  .hero h1 {
+    font-size: 40px;
+  }
 }
 .hero p {
   line-height: 35px;
   font-size: 25px;
   color: #fff;
   z-index: 1;
-  width: 900px;
   padding-bottom: 30px;
 }
 .hero a {
@@ -94,13 +113,11 @@ ul li a:hover {
   z-index: 1;
   width: 150px;
   padding: 20px;
-  padding-left: 35px;
 }
 .hero a:hover {
   background-color: blue;
   transition: 0.5s;
 }
-
 .select {
   display: flex;
   gap: 10px;
@@ -116,7 +133,7 @@ ul li a:hover {
 .selsct_your_car,
 .selsct_your_car1,
 .selsct_your_car2 {
-  margin: 40px;
+  padding: 40px;
 }
 .selsct_your_car select,
 .selsct_your_car1 select,
@@ -135,7 +152,7 @@ ul li a:hover {
 .selsct_your_car2 h2 {
   text-transform: capitalize;
   color: #0000009a;
-  margin: 15px 0 20px 100px;
+  padding: 15px 0 20px 100px;
 }
 .select a {
   text-align: center;
@@ -601,7 +618,7 @@ footer {
   width: 65px;
   height: 22px;
 }
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .img_new_car .img_car img {
     width: 300px;
   }
