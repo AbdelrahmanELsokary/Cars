@@ -17,17 +17,30 @@ header {
   position: fixed;
   top: 0;
   display: flex;
-  /* background-color: #434cb5bb; */
+  background-color: #7c82b5;
   justify-content: space-around;
   width: 100%;
-  z-index: 2;
+  height: 70px;
+  align-items: center;
+  z-index: 1;
 }
-@media (max-width: 991px) {
+header a img{
+  width: 50px;
+  display: none;
+  
+}
+@media (max-width: 700px) {
   header {
     justify-content: start;
   }
   header nav {
     display: none;
+  }
+  header a img{
+    display: block;
+    position: absolute;
+    top:10px;
+    right: 30px;
   }
 }
 .logo {
@@ -55,11 +68,12 @@ nav ul li a {
   font-weight: 700;
 }
 nav span {
-  color: #4e4ffa;
+  color: #0a0ae3;
 }
 ul li a:hover {
   color: #4e4ffa;
 }
+
 .hero {
   position: relative;
   height: 100vh;
@@ -68,7 +82,7 @@ ul li a:hover {
   background-position: center;
   background-size: cover;
 }
-.hero .container {
+.hero .container_hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +132,7 @@ ul li a:hover {
   background-color: blue;
   transition: 0.5s;
 }
-.select {
+.select .container_select {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -184,9 +198,9 @@ ul li a:hover {
   border-radius: 100px;
   padding: 20px;
 }
-.repair_support_car {
+.repair_support_car .container_repair_support_car {
   display: flex;
-  gap: 0;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .repair_support_car img {
@@ -302,6 +316,11 @@ ul li a:hover {
 .img_new_car .img_car img {
   padding-top: 100px;
 }
+@media (max-width: 700px) {
+  .img_new_car .img_car img {
+    width: 300px;
+  }
+}
 .titel_car h2 {
   color: #00000096;
   font-size: 30px;
@@ -319,6 +338,7 @@ ul li a:hover {
   width: 500px;
 }
 .titel_car p {
+  width: 400px;
   padding-bottom: 35px;
 }
 .titel_car a {
@@ -497,12 +517,19 @@ ul li a:hover {
 footer {
   background-color: #2a2d54;
 }
-.footer {
+footer .footer {
   display: flex;
   justify-content: space-around;
-  gap: 0;
+  gap: 20px;
   flex-wrap: wrap;
   padding-top: 100px;
+}
+@media (max-width: 700px) {
+  footer .footer {
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
 }
 .footer_logo {
   width: 200px;
@@ -537,8 +564,8 @@ footer {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 300px;
 }
+
 .top_brands h3 {
   position: absolute;
   color: #fff;
@@ -547,8 +574,13 @@ footer {
   padding-left: 30px;
 }
 .top_brands ul {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin: 50px 0 0 20px;
+}
+@media (max-width: 700px) {
+  .top_brands ul{
+    margin: auto;
+    margin-top: 30px;
+  }
 }
 .about_devloon ul,
 .top_brands ul {
@@ -601,13 +633,16 @@ footer {
   top: 4px;
   height: 15px;
 }
-.foot {
+.copyright {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-around;
   border-top: 1px solid #ccc;
-  padding-top: 40px;
+  padding: 20px;
+  align-items: center;
 }
-.copy p {
+.copy_social_icons p {
   color: #c5c5c5ad;
 }
 .social_icons img {
@@ -617,9 +652,4 @@ footer {
 .social_icons span img {
   width: 65px;
   height: 22px;
-}
-@media (max-width: 700px) {
-  .img_new_car .img_car img {
-    width: 300px;
-  }
 }
