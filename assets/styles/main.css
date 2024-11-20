@@ -55,6 +55,8 @@ header a img{
 }
 nav ul {
   display: flex;
+  gap: 0;
+  flex-wrap: wrap;
 }
 nav ul li {
   list-style: none;
@@ -87,8 +89,17 @@ ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   height: 100vh;
   text-align: center;
+=======
+  flex-direction: column;
+  background-image: url(../images/welcome_hero/welcome-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  padding-bottom: 100px;
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
 }
 .hero::after {
   content: "";
@@ -116,6 +127,10 @@ ul li a:hover {
   font-size: 25px;
   color: #fff;
   z-index: 1;
+<<<<<<< HEAD
+=======
+  width: 900px;
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
   padding-bottom: 30px;
 }
 .hero a {
@@ -127,6 +142,10 @@ ul li a:hover {
   z-index: 1;
   width: 150px;
   padding: 20px;
+<<<<<<< HEAD
+=======
+  padding-left: 35px;
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
 }
 .hero a:hover {
   background-color: blue;
@@ -191,7 +210,7 @@ ul li a:hover {
   rotate: -90deg;
 }
 .select span a {
-  background-image: url(/assets/images/icons/next-grey.png);
+  background-image: url(../images/icons/next-grey.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 11px 14px;
@@ -200,7 +219,11 @@ ul li a:hover {
 }
 .repair_support_car .container_repair_support_car {
   display: flex;
+<<<<<<< HEAD
   gap: 30px;
+=======
+  gap: 0;
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
   flex-wrap: wrap;
 }
 .repair_support_car img {
@@ -315,11 +338,14 @@ ul li a:hover {
 }
 .img_new_car .img_car img {
   padding-top: 100px;
+<<<<<<< HEAD
 }
 @media (max-width: 700px) {
   .img_new_car .img_car img {
     width: 300px;
   }
+=======
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
 }
 .titel_car h2 {
   color: #00000096;
@@ -338,7 +364,10 @@ ul li a:hover {
   width: 500px;
 }
 .titel_car p {
+<<<<<<< HEAD
   width: 400px;
+=======
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
   padding-bottom: 35px;
 }
 .titel_car a {
@@ -520,7 +549,11 @@ footer {
 footer .footer {
   display: flex;
   justify-content: space-around;
+<<<<<<< HEAD
   gap: 20px;
+=======
+  gap: 0;
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
   flex-wrap: wrap;
   padding-top: 100px;
 }
@@ -639,8 +672,12 @@ footer .footer {
   gap: 20px;
   justify-content: space-around;
   border-top: 1px solid #ccc;
+<<<<<<< HEAD
   padding: 20px;
   align-items: center;
+=======
+  padding-top: 40px;
+>>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
 }
 .copy_social_icons p {
   color: #c5c5c5ad;
@@ -652,4 +689,9 @@ footer .footer {
 .social_icons span img {
   width: 65px;
   height: 22px;
+}
+@media screen and (max-width: 700px) {
+  .img_new_car .img_car img {
+    width: 300px;
+  }
 }
