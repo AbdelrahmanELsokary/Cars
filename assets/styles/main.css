@@ -89,17 +89,9 @@ ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
+
   height: 100vh;
   text-align: center;
-=======
-  flex-direction: column;
-  background-image: url(../images/welcome_hero/welcome-banner.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-  padding-bottom: 100px;
->>>>>>> f33305ba59980f45d03bfb81aaeccb514dcb0ff9
 }
 .hero::after {
   content: "";
