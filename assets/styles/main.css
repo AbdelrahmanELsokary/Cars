@@ -9,11 +9,26 @@ html {
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 .container {
   padding: 0 15px;
   margin: auto;
 }
-header {
+header .container {
   position: fixed;
   top: 0;
   display: flex;
@@ -82,7 +97,7 @@ ul li a:hover {
   background-position: center;
   background-size: cover;
 }
-.hero .container_hero {
+.hero .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +147,7 @@ ul li a:hover {
   background-color: blue;
   transition: 0.5s;
 }
-.select .container_select {
+.select .container {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -198,17 +213,16 @@ ul li a:hover {
   border-radius: 100px;
   padding: 20px;
 }
-.repair_support_car .container_repair_support_car {
+.repair_support_car .container {
   display: flex;
-  gap: 30px;
-  gap: 0;
+  gap: 20px;
+  width: 85%;
   flex-wrap: wrap;
 }
 .repair_support_car img {
   align-items: center;
   width: 200px;
   height: 150px;
-  margin-left: 70px;
   margin-left: 100px;
 }
 .repair_support_car .largest_car,
@@ -280,7 +294,7 @@ ul li a:hover {
   width: 20px;
   margin: auto;
 }
-.new_car {
+.new_car .container{
   padding-top: 200px;
   gap: 0;
   flex-wrap: wrap;
