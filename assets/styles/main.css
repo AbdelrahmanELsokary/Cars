@@ -144,6 +144,21 @@ header .container nav input{
   font-weight: 900;
   z-index: 1;
 }
+@media (max-width:991px) {
+  .hero .container h1{
+    font-size: 30px;
+  }
+  .select .container{
+    text-align: center;
+  }
+  .select .container {
+    justify-content: center;
+    top:0px;
+  }
+  .select .container h2{
+    padding: 0;
+  }
+}
 .hero p {
   line-height: 35px;
   font-size: 25px;
@@ -165,15 +180,14 @@ header .container nav input{
 }
 .select .container {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
   background-color: #fff;
-  font-size: small;
   box-shadow: 0 10px 40px 0 rgba(38, 40, 64, 0.2);
+  border-radius: 10px;
   position: relative;
   bottom: 162px;
   width: 80%;
-  margin: auto;
+  padding-bottom: 10px;
 }
 .selsct_your_car,
 .selsct_your_car1,
@@ -189,7 +203,7 @@ header .container nav input{
   border: none;
   border-radius: 5px;
   width: 100px;
-  margin-left: 100px;
+  margin: 15px 40px;
   padding: 20px;
 }
 .selsct_your_car h2,
@@ -197,13 +211,10 @@ header .container nav input{
 .selsct_your_car2 h2 {
   text-transform: capitalize;
   color: #0000009a;
-  padding: 15px 0 20px 100px;
+  padding: 20px 0 0 45px;
 }
 .select a {
   margin: auto;
-}
-.select a:hover {
-  background-color: blue;
 }
 .select span {
   position: relative;
@@ -214,6 +225,7 @@ header .container nav input{
 }
 .select span a {
   background-image: url(../images/icons/next-grey.png);
+  background-color: #0a0ae3;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 11px 14px;
