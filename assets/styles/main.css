@@ -113,21 +113,13 @@ header .container nav input{
   transition: 0.5s;
 }
 }
-
 .hero {
+  color: #fff;
   height: 100vh;
   padding-bottom: 100px;
   background-image: url(../images/welcome_hero/welcome-banner.jpg);
   background-position: center;
   background-size: cover;
-}
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
 }
 .hero::after {
   content: "";
@@ -138,36 +130,36 @@ header .container nav input{
   width: 100%;
   height: 100%;
 }
-.hero h1 {
-  text-transform: uppercase;
-  font-weight: 900;
-  line-height: 120px;
-  color: #fff;
-  z-index: 1;
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
 }
-@media (min-width: 767px) {
-  .hero h1 {
-    font-size: 40px;
-  }
+.hero .container h1 {
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: 900;
+  z-index: 1;
 }
 .hero p {
   line-height: 35px;
   font-size: 25px;
-  color: #fff;
   z-index: 1;
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
-.hero a {
+.btn{
   color: #fff;
   text-transform: capitalize;
   background-color: #4e4ffa;
   border-radius: 5px;
   text-decoration: none;
   z-index: 1;
-  width: 150px;
-  padding: 20px;
+  padding: 15px 30px;
 }
-.hero a:hover {
+.btn:hover {
   background-color: blue;
   transition: 0.5s;
 }
@@ -208,16 +200,7 @@ header .container nav input{
   padding: 15px 0 20px 100px;
 }
 .select a {
-  text-align: center;
-  font-size: larger;
-  text-transform: capitalize;
-  background-color: #4e4ffa;
-  color: #fff;
-  text-decoration: none;
-  width: 150px;
-  border-radius: 5px;
   margin: auto;
-  padding: 20px;
 }
 .select a:hover {
   background-color: blue;
@@ -378,21 +361,7 @@ header .container nav input{
 }
 .titel_car p {
   width: 400px;
-
   padding-bottom: 35px;
-}
-.titel_car a {
-  text-decoration: none;
-  background-color: #4e4ffa;
-  color: #fff;
-  font-size: large;
-  text-transform: capitalize;
-  border-radius: 5px;
-  padding: 15px;
-}
-.titel_car a:hover {
-  background-color: blue;
-  transition: 0.5s;
 }
 .featured_cars {
   padding-top: 300px;
